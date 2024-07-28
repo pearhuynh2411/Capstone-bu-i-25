@@ -1,0 +1,410 @@
+@charset "UTF-8";
+.product-detail .container {
+  margin-top: 50px;
+}
+.product-detail .container .row .col-5 img {
+  width: 334px;
+  height: 355px;
+  margin-left: 85px;
+}
+.product-detail .container .row .col-7 .title {
+  width: 400px;
+  height: 36px;
+}
+.product-detail .container .row .col-7 .title h2 {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 36.31px;
+}
+.product-detail .container .row .col-7 .text {
+  width: 503px;
+  height: 100px;
+  margin-top: 10px;
+  overflow: auto;
+  text-overflow: ellipsis;
+}
+.product-detail .container .row .col-7 .text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+}
+.product-detail .container .row .col-7 .available {
+  width: 162px;
+  height: 58px;
+}
+.product-detail .container .row .col-7 .available h4 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 49.05px;
+  color: #1ED90E;
+}
+.product-detail .container .row .col-7 .size {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 0fr));
+  /* Điều chỉnh kích thước cột */
+  grid-gap: 1px;
+}
+.product-detail .container .row .col-7 .size button {
+  width: 50px;
+  height: 50px;
+  background-color: #CCCCCC;
+  border: 0;
+}
+.product-detail .container .row .col-7 .size button a {
+  text-decoration: none;
+  color: #1E1D1D;
+  font-weight: 600;
+  font-size: 24px;
+}
+.product-detail .container .row .col-7 .price {
+  margin-top: 10px;
+  width: 113px;
+  height: 47px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #FC0303;
+}
+.product-detail .container .row .col-7 .tang {
+  margin-top: 10px;
+}
+.product-detail .container .row .col-7 .tang button {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  border: 0;
+}
+.product-detail .container .row .col-7 .tang button a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 30px;
+  font-weight: 400;
+}
+.product-detail .container .row .col-7 .tang a {
+  margin: 0 10px;
+  font-size: 30px;
+  font-weight: 400;
+}
+.product-detail .container .row .col-7 .cart {
+  width: 175px;
+  height: 64px;
+  background: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.71%);
+  border: 0;
+  margin-top: 10px;
+}
+.product-detail .container .row .col-7 .cart a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+  color: #F6F6F6;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+header {
+  background: black;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+header .container .logo .imgLogo img {
+  width: 116px;
+  height: 32px;
+  margin-top: 10px;
+  margin-left: 24px;
+}
+header .container .row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .container .row .purchase {
+  width: 66px;
+  height: 36px;
+  top: 6px;
+}
+header .container .row .purchase .muahang {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .container .row .purchase .muahang img {
+  width: 28.18px;
+  height: 25.83px;
+  top: 2.5px;
+}
+header .container .row .purchase .muahang h4 {
+  width: 35px;
+  height: 36px;
+  font-size: 30px;
+  line-height: 36.31px;
+  color: #FFFFFF;
+  font-weight: 300;
+}
+header .container .row .dangnhap {
+  width: 91px;
+  height: 32px;
+  border: 1px;
+  margin-top: 14px;
+  padding-left: 30px;
+}
+header .container .row .dangnhap a {
+  font-size: 16px;
+  line-height: 19.36px;
+  color: #F6F6F6;
+  font-weight: 300;
+}
+header .container .row .dangki {
+  width: 90px;
+  height: 32px;
+  margin-top: 15px;
+  border: 1px;
+}
+header .container .row .dangki a {
+  font-size: 16px;
+  line-height: 19.36px;
+  color: #F6F6F6;
+  font-weight: 300;
+}
+header .container .row a {
+  text-decoration: none;
+  transition: color 0.5s;
+}
+header .container .row a:hover {
+  color: aqua;
+  transition: 0.2s;
+}
+
+.Menu .container {
+  height: 75px;
+}
+.Menu .container .menu {
+  height: 50px;
+  padding-top: 16px;
+}
+.Menu .container .menu .home {
+  width: 56px;
+  height: 24px;
+  font-size: 20px;
+  font-weight: 400;
+  transition: color 0.5s;
+  position: relative;
+}
+.Menu .container .menu .home::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: black;
+  transform: scale(1, 1);
+}
+.Menu .container .menu .men {
+  width: 41px;
+  height: 24px;
+  font-size: 20px;
+  font-weight: 300;
+  opacity: 70%;
+}
+.Menu .container .menu .woman {
+  width: 70px;
+  height: 24px;
+  font-size: 20px;
+  font-weight: 300;
+  opacity: 70%;
+}
+.Menu .container .menu .kid {
+  width: 31px;
+  height: 24px;
+  font-size: 20px;
+  font-weight: 300;
+}
+.Menu .container .menu .sport {
+  width: 52px;
+  height: 24px;
+  font-size: 20px;
+  font-weight: 300;
+}
+.Menu .container a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: black;
+  line-height: 24.2px;
+  transition: color 0.5s;
+  position: relative;
+}
+.Menu .container a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  transform: scale(0, 0);
+}
+.Menu .container a:hover {
+  color: black;
+  transition: color 0.5s;
+}
+.Menu .container a:hover::after {
+  transform: scale(1, 1);
+  transition: transform 0.5s;
+}
+
+.carousel {
+  position: relative;
+}
+.carousel .container .carousel-indicators {
+  position: absolute;
+  z-index: 2;
+}
+.carousel .container .carousel-indicators button {
+  width: 15px;
+  height: 15px;
+  border: 1px;
+  border-radius: 50%;
+  color: #D9D9D9;
+  transition: color 0.5s !important;
+}
+.carousel .container .carousel-indicators button:hover {
+  color: aqua !important;
+  transition: 0.2s !important;
+}
+.carousel .container .carousel-inner .carousel-item img {
+  width: 821px !important;
+  height: 392px;
+  margin-left: 86px;
+}
+.carousel .container .carousel-inner .carousel-item button {
+  position: absolute;
+  z-index: 1;
+}
+.carousel .container .product-name {
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.carousel .container .product-name img {
+  width: 1317px !important;
+  height: 393px;
+  margin-left: 0 !important;
+}
+.carousel .container .product-name .content {
+  text-align: start;
+  position: relative;
+  top: 150px;
+  left: 936px;
+  width: 350px;
+}
+.carousel .container .product-name .content h1 {
+  font-size: 40px;
+  font-weight: 300;
+  color: black;
+  line-height: 48.41px;
+}
+.carousel .container .product-name .content h2 {
+  font-size: 20px;
+  font-weight: 300;
+  color: black;
+  line-height: 24.2px;
+}
+.carousel .container .product-name .content button {
+  background-color: #F8B653;
+  border: 0;
+  width: 150px;
+  height: 50px;
+}
+.carousel .container .product-name .content button a {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24.2px;
+  text-decoration: none;
+  color: #F6F6F6;
+}
+
+.product-feature {
+  height: 1044px !important;
+}
+.product-feature .container .title {
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+}
+.product-feature .container .row .col-sm-4 {
+  margin-top: 153px;
+  padding-left: 100px;
+}
+.product-feature .container .row .col-sm-4 img {
+  width: 220px;
+  height: 156px;
+}
+.product-feature .container .row .col-sm-4 h1 {
+  width: 250px;
+  height: 29px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29.05px;
+  color: black;
+}
+.product-feature .container .row .col-sm-4 h5 {
+  width: 153px;
+  height: 24px;
+  font-weight: 300;
+  font-size: 20px;
+  color: #CBC9C9;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.product-feature .container .row .col-sm-4 .row a {
+  width: 168px;
+  height: 64px;
+  border: 0;
+  background-color: #E1B067 !important;
+  text-decoration: none;
+}
+.product-feature .container .row .col-sm-4 .row a p {
+  width: 109px;
+  height: 29px;
+  font-size: 24px;
+  font-weight: 200;
+  color: black;
+  line-height: 29.05px;
+  text-align: center;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+.product-feature .container .row .col-sm-4 .row h3 {
+  width: 120px;
+  height: 64px;
+  border: 0;
+  background-color: #DEDDDC;
+}
+.product-feature .container .row .col-sm-4 .row h3 p {
+  width: 54px;
+  height: 29px;
+  font-weight: 600;
+  font-size: 24px;
+  margin-left: 40px;
+  margin-top: 17px;
+}/*# sourceMappingURL=index.css.map */

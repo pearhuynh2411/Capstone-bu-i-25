@@ -1,0 +1,395 @@
+@import '../scss/detail.scss';
+@import '../scss/variable.scss';
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    
+}
+
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    
+}
+
+
+header {
+    background: black;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        
+
+        .logo {
+
+
+            .imgLogo img {
+                width: 116px;
+                height: 32px;
+                margin-top: 10px;
+                margin-left: 24px;
+            }
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+
+
+
+
+
+
+            .purchase {
+                width: 66px;
+                height: 36px;
+                top: 6px;
+
+                .muahang {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+
+                    img {
+
+                        width: 28.18px;
+                        height: 25.83px;
+                        top: 2.5px;
+
+
+
+
+                    }
+
+                    h4 {
+
+                        width: 35px;
+                        height: 36px;
+                        font-size: 30px;
+                        line-height: 36.31px;
+                        color: $color-200;
+                        font-weight: $fw-3;
+
+                    }
+                }
+            }
+
+            .dangnhap {
+                width: 91px;
+                height: 32px;
+                border: 1px;
+                margin-top: 14px;
+                padding-left: 30px;
+
+                a {
+                    font-size: 16px;
+                    line-height: 19.36px;
+                    color: $color-100;
+                    font-weight: $fw-3;
+                }
+
+
+            }
+
+            .dangki {
+                width: 90px;
+                height: 32px;
+                margin-top: 15px;
+                border: 1px;
+
+
+
+                a {
+                    font-size: 16px;
+                    line-height: 19.36px;
+                    color: $color-100;
+                    font-weight: $fw-3;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                transition: color 0.5s;
+
+                &:hover {
+                    color: aqua;
+                    transition: 0.2s;
+                }
+            }
+        }
+
+    }
+}
+
+.Menu {
+    
+    
+    .container {
+        height: 75px;
+    
+        .menu {
+            height: 50px;
+            padding-top:16px;
+            
+            .home{
+                width: 56px;
+                height: 24px;
+                font-size: 20px;
+                font-weight: $fw-4;
+                transition: color 0.5s;
+            position: relative;
+            &::after{
+                content:'';
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                width: 60px;
+                height: 3px;
+                background-color: $color-300;
+                transform: scale(1,1);
+            }
+            }
+            .men{
+                width: 41px;
+                height: 24px;
+                font-size: 20px;
+                font-weight: $fw-3;
+                
+                
+                opacity: 70%;
+
+            }
+            .woman{
+                width: 70px;
+                height: 24px;
+                font-size: 20px;
+                font-weight: $fw-3;
+                
+                
+                opacity: 70%;
+            }
+            .kid{
+                width: 31px;
+                height: 24px;
+                font-size: 20px;
+                font-weight: $fw-3;
+            }
+            .sport{
+                width: 52px;
+                height: 24px;
+                font-size: 20px;
+                font-weight: $fw-3;
+            }
+        }
+        a{
+            margin-left:25px;
+            text-decoration: none;
+            color: $color-300;
+            line-height: 24.2px;
+            transition: color 0.5s;
+            position: relative;
+            &::after{
+                content:'';
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                width: 100%;
+                height: 3px;
+                background-color: $color-300;
+                transform: scale(0,0);
+            }
+            &:hover{
+                color: $color-300;
+                transition: color 0.5s;
+                &::after{
+                    transform: scale(1,1);
+                    transition: transform 0.5s;
+                }
+            }
+        }
+    }
+}
+.carousel{
+    position: relative;
+    
+    .container{
+       
+        .carousel-indicators{
+            position: absolute;
+                z-index: 2;
+                
+            button{
+                
+                width: 15px;
+                height: 15px;
+                border: 1px;
+                border-radius: 50%;
+                color:$color-button;
+                transition: color 0.5s !important;
+
+                &:hover {
+                    color: aqua !important;
+                    transition: 0.2s !important;
+                }
+            }
+        }
+        .carousel-inner{
+            
+            .carousel-item{
+                
+                img{
+                    
+                    
+                    width: 821px !important;
+                    height: 392px;
+                    margin-left: 86px;
+                    
+                }
+                
+                button{
+                    position: absolute;
+                    z-index: 1;
+                    
+                }
+            }
+            
+        }
+        
+        .product-name{
+            position: absolute;
+            z-index: 0;
+            left: 0;
+            
+            width: 100%;
+            height: 100%;
+            
+            img{
+                width: 1317px !important;
+                height: 393px;
+                margin-left:0  !important;
+
+            }
+            .content{
+                text-align: start;
+                position: relative;
+                top: 150px;
+                left: 936px;
+                width: 350px;
+                h1{
+                    font-size: 40px;
+                    font-weight: $fw-3;
+                    color: $color-300;
+                    line-height: 48.41px;
+                    
+                }
+                h2{
+                    font-size: 20px;
+                    font-weight: $fw-3;
+                    color: $color-300;
+                    line-height: 24.2px;
+                }
+                button{
+                    background-color: #F8B653;
+                    border:0;
+                    width: 150px;
+                    height: 50px;
+                    
+                    a{
+                    font-size: 20px;
+                    font-weight: $fw-3;
+                    line-height: 24.2px;
+                    text-decoration: none;
+                    color: $color-100;
+                    }
+                }
+            }
+        }
+    }
+
+}
+.product-feature{
+    height: 1044px !important;
+    
+    .container{
+        
+        .title{
+            font-size: 40px;
+            font-weight: $fw-4;
+            text-align: center;
+        }
+        .row{
+            .col-sm-4 {
+               margin-top: 153px;
+               padding-left: 100px;
+               
+               img{
+                width: 220px;
+                height: 156px;
+               }
+               h1{
+                width: 250px;
+                height: 29px;
+                font-size: 24px;
+                font-weight: $fw-3;
+                line-height: 29.05px;
+                color: $color-300;
+               }
+               h5{
+                width: 153px;
+                height: 24px;
+                font-weight: $fw-3;
+                font-size: 20px;
+                color: $color-400;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+               }
+               .row{
+                
+                a {
+                    width: 168px;
+                    height: 64px;
+                    border: 0;
+                    background-color: #E1B067 !important;
+                    text-decoration: none;
+                    p{
+                        width: 109px;
+                        height: 29px;
+                        font-size: 24px;
+                        font-weight: $fw-2;
+                        
+                        color: $color-300;
+                        line-height: 29.05px;
+                        text-align: center;
+                        margin-left: 20px;
+                        margin-top: 15px;
+                    }
+                }
+                h3{
+                    width: 120px;
+                    height: 64px;
+                    border: 0;
+                    background-color: $color-85;
+                    p{
+                        width: 54px;
+                        height: 29px;
+                        font-weight: 600;
+                        font-size: 24px;
+                        margin-left: 40px;
+                        margin-top: 17px;
+                    }
+                }
+               }
+            }
+        }
+    }
+}

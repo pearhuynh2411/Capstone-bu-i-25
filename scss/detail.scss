@@ -1,0 +1,140 @@
+@import '../scss/variable.scss';
+
+.product-detail {
+    .container {
+        margin-top: 50px;
+
+        .row {
+            .col-5 {
+                img {
+                    width: 334px;
+                    height: 355px;
+                    margin-left: 85px;
+                }
+            }
+
+            .col-7 {
+                .title {
+                    width: 400px;
+                    height: 36px;
+
+
+                    h2 {
+                        font-weight: $fw-3;
+                        font-size: 30px;
+                        line-height: 36.31px;
+                    }
+                }
+
+                .text {
+                    width: 503px;
+                    height: 100px;
+                    margin-top: 10px;
+                    
+                    overflow: auto;
+                   
+                    text-overflow: ellipsis;
+
+                    p {
+                        font-size: 16px;
+                        font-weight: $fw-4;
+                        line-height: 19.36px;
+
+                    }
+                }
+
+                .available {
+                    width: 162px;
+                    height: 58px;
+
+                    h4 {
+                        font-weight: $fw-5;
+                        font-size: 24px;
+                        line-height: 49.05px;
+                        color: $color-danger;
+                    }
+                }
+
+                .size {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(100px, 0fr));
+                    /* Điều chỉnh kích thước cột */
+                    grid-gap: 1px;
+
+                    button {
+                        width: 50px;
+                        height: 50px;
+                        background-color: $color-ee;
+                        border: 0;
+
+                        a {
+                            text-decoration: none;
+                            color: $color-dennhat;
+                            font-weight: $fw-6;
+                            font-size: 24px;
+
+                        }
+                    }
+                }
+
+                .price {
+                    margin-top: 10px;
+                    width: 113px;
+                    height: 47px;
+                    font-size: 30px;
+                    font-weight: $fw-6;
+                    color: $color-primary;
+
+                }
+
+                .tang {
+
+                    margin-top: 10px;
+
+                    button {
+                        width: 50px;
+                        height: 50px;
+                        background-color: blue;
+                        border: 0;
+
+
+                        a {
+
+                            text-decoration: none;
+                            color: $color-200;
+                            font-size: 30px;
+                            font-weight: $fw-4;
+
+                        }
+                    }
+
+                    a {
+                        margin: 0 10px;
+                        font-size: 30px;
+                        font-weight: $fw-4;
+                    }
+                }
+
+                .cart {
+
+                    width: 175px;
+                    height: 64px;
+                    background: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.71%);
+                    border: 0;
+                    margin-top: 10px;
+
+                    a {
+                        display: inline-block;
+                        text-decoration: none;
+                        font-size: 24px;
+                        font-weight: $fw-5;
+                        color: $color-100;
+                        margin-top: 15px;
+                        margin-left: 20px;
+                    }
+
+                }
+            }
+        }
+    }
+}
